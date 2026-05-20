@@ -1,0 +1,38 @@
+{
+  "name": "opencode-cattleprod",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that auto-continues when model stops but todos are incomplete",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "todo",
+    "auto-continue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jleaders/opencode-cattleprod.git"
+  },
+  "homepage": "https://github.com/jleaders/opencode-cattleprod#readme",
+  "bugs": {
+    "url": "https://github.com/jleaders/opencode-cattleprod/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.0.166"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  }
+}
