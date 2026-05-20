@@ -16,15 +16,23 @@ It is meant for workflows where you want OpenCode to keep working until the trac
 
 ## Install
 
-Add the package to your OpenCode config:
+Clone the repo somewhere local, then add it to your OpenCode config as a `file://` plugin entry:
 
 ```json
 {
-  "plugin": ["opencode-cattleprod"]
+  "plugin": ["file:///absolute/path/to/opencode-cattleprod"]
 }
 ```
 
-OpenCode installs npm plugins automatically at startup.
+For example:
+
+```json
+{
+  "plugin": ["file:///home/your-user/Projects/opencode-cattleprod"]
+}
+```
+
+This matches how local plugins are loaded in OpenCode today. If you later publish the package to npm, you can switch to a package-name entry instead.
 
 ## Behavior notes
 
