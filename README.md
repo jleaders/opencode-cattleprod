@@ -32,7 +32,7 @@ For example:
 }
 ```
 
-This matches how local plugins are loaded in OpenCode today. If you later publish the package to npm, you can switch to a package-name entry instead.
+OpenCode loads the plugin directly from that local path.
 
 ## Behavior notes
 
